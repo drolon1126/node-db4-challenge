@@ -13,7 +13,7 @@ exports.up = function(knex) {
         .notNullable();
       tbl.text('instructions')
         .notNullable();
-      tbl.integer('scheme_id')
+      tbl.integer('recipe_id')
         .unsigned()
         .notNullable()
         .references('id')
